@@ -1,0 +1,16 @@
+{
+  "name": "bingo-app",
+  "version": "1.0.0",
+  "description": "Prosta aplikacja Bingo 3x3 z użyciem Express i Socket.io",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
