@@ -116,7 +116,7 @@ body {
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.7);
     width: 100%;
-    max-width: 960px;
+    max-width: 1080px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -215,10 +215,23 @@ h2, h3 {
         justify-content: center;
     }
 
-    .controls-panel select,
+    .grid .cell-text {
+        font-size: 21px;
+    }
+
+    .controls-panel select {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 23px;
+        padding: 16px 18px;
+    }
+
     .controls-panel button {
-        font-size: 20px;
-        padding: 18px 20px;
+        font-size: 23px;
+        padding: 16px 18px;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -235,15 +248,16 @@ h2, h3 {
     }
 
     .controls-panel {
-        max-width: 320px;
+        max-width: 420px;
     }
 
     .board-panel {
         flex: 1;
-        max-width: 520px;
+        max-width: 560px;
     }
 
     .grid {
         margin: 0;
+        max-width: 560px;
     }
 }
