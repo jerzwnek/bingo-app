@@ -29,7 +29,7 @@
     margin-bottom: 8px;
     color: #111;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 11px;
 }
 
 .votes {
@@ -191,47 +191,63 @@ h2, h3 {
     body {
         display: flex;
         flex-direction: column;
-        padding: 18px 12px 18px;
+        padding: 18px 12px 20px;
         min-height: 100vh;
     }
 
     .app-container {
-        padding: 22px 18px 28px;
+        padding: 20px 16px 24px;
         gap: 24px;
-        min-height: calc(100vh - 36px);
+        min-height: auto;
     }
 
     .grid {
         width: 100%;
-        max-width: none;
+        max-width: 300px;
+        margin: 0 0 0 calc((100% - 300px) / 4);
+        gap: 6px;
     }
 
     .cell {
-        padding: 24px 12px;
-        min-height: 150px;
+        padding: 14px 8px;
+        min-height: 95px;
     }
 
     .legend-row {
         justify-content: center;
+        gap: 12px;
     }
 
     .grid .cell-text {
-        font-size: 21px;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    .controls-panel {
+        gap: 20px;
     }
 
     .controls-panel select {
-        width: 50%;
+        width: 60%;
+        max-width: 220px;
         margin: 0 auto;
-        font-size: 23px;
+        font-size: 22px;
         padding: 16px 18px;
     }
 
     .controls-panel button {
-        font-size: 23px;
-        padding: 16px 18px;
-        width: 25%;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 21px;
+        padding: 14px 16px;
+    }
+
+    .buttons-group {
+        gap: 14px;
+    }
+
+    .buttons-group button {
+        width: 60%;
+        max-width: 220px;
+        align-self: center;
     }
 }
 
