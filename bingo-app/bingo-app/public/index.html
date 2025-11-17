@@ -7,43 +7,49 @@
 </head>
 <body>
     <div class="app-container">
-        <h2>Wybierz swojego gracza:</h2>
-        <select id="playerSelect">
-            <option>Andzia</option>
-            <option>Jerzy</option>
-            <option>Rencia</option>
-            <option>Szymon</option>
-        </select>
+        <div class="panel controls-panel">
+            <h2>Wybierz swojego gracza:</h2>
+            <select id="playerSelect">
+                <option>Andzia</option>
+                <option>Jerzy</option>
+                <option>Rencia</option>
+                <option>Szymon</option>
+            </select>
 
-        <div class="legend">
-            <h3>Gracze i kolory:</h3>
-            <div class="legend-row">
-                <div class="legend-item">
-                    <span class="legend-color legend-andzia"></span>
-                    <span>Andzia</span>
+            <div class="legend">
+                <h3>Gracze i kolory:</h3>
+                <div class="legend-row">
+                    <div class="legend-item">
+                        <span class="legend-color legend-andzia"></span>
+                        <span>Andzia</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color legend-jerzy"></span>
+                        <span>Jerzy</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color legend-rencia"></span>
+                        <span>Rencia</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color legend-szymon"></span>
+                        <span>Szymon</span>
+                    </div>
                 </div>
-                <div class="legend-item">
-                    <span class="legend-color legend-jerzy"></span>
-                    <span>Jerzy</span>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-color legend-rencia"></span>
-                    <span>Rencia</span>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-color legend-szymon"></span>
-                    <span>Szymon</span>
-                </div>
+                <p class="hint">Kliknij pole, aby je wybrać (max 3). Dwuklik na pole, aby zmienić tekst.</p>
             </div>
-            <p class="hint">Kliknij pole, aby je wybrać (max 3). Dwuklik na pole, aby zmienić tekst.</p>
+
+            <div class="buttons-group">
+                <button id="sendSelection">Zapisz wybór</button>
+                <button id="resetMe">Reset mojego wyboru</button>
+                <button id="resetAll">Reset wszystkich</button>
+            </div>
         </div>
 
-        <h2>Plansza 3x3</h2>
-        <div id="board" class="grid"></div>
-
-        <button id="sendSelection">Zapisz wybór</button>
-        <button id="resetMe">Reset mojego wyboru</button>
-        <button id="resetAll">Reset wszystkich</button>
+        <div class="panel board-panel">
+            <h2>Plansza 3x3</h2>
+            <div id="board" class="grid"></div>
+        </div>
     </div>
 
     <script src="/socket.io/socket.io.js"></script>
